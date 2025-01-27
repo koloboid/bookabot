@@ -5,7 +5,7 @@ interface UserDbData {
 	users: User[];
 }
 
-export class UserDbJson implements IUserDb {
+export class UserDbJsonFile implements IUserDb {
 	protected users = new Map<number, User>();
 
 	constructor(protected readonly fileName: string | undefined) {}

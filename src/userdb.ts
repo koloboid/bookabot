@@ -1,5 +1,3 @@
-import { UserDbJson as UserDbJsonFile } from './userdb.json.file';
-
 export interface User {
 	telegramId: number;
 	firstName: string;
@@ -13,5 +11,3 @@ export interface IUserDb {
 	getByTelegramId(id: number): Promise<User | null>;
 	save(user: User): Promise<void>;
 }
-
-export const userDb: IUserDb = new UserDbJsonFile('users.json');

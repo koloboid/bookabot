@@ -2,7 +2,7 @@ import { type Conversation } from '@grammyjs/conversations';
 import { isMobilePhone } from 'validator';
 import isEmail from 'validator/lib/isEmail';
 import { MyBotContext } from './bot';
-import { userDb } from './userdb';
+import { userDb } from './databases';
 
 type RegistrationConversation = Conversation<MyBotContext>;
 
